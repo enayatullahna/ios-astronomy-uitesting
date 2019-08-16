@@ -23,6 +23,18 @@ class AstronomyUITests: XCTestCase {
     }
 
     func testExample() {
+        
+        
+        let sol0NavigationBar = XCUIApplication().navigationBars["Sol 0"]
+        let photoscollectionviewcontrollerNextsolbuttonButton = sol0NavigationBar/*@START_MENU_TOKEN@*/.buttons["PhotosCollectionViewController.NextSolButton"]/*[[".buttons[\">\"]",".buttons[\"PhotosCollectionViewController.NextSolButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        photoscollectionviewcontrollerNextsolbuttonButton.tap()
+        photoscollectionviewcontrollerNextsolbuttonButton.tap()
+        
+        let photoscollectionviewcontrollerPrevioussolbuttonButton = sol0NavigationBar/*@START_MENU_TOKEN@*/.buttons["PhotosCollectionViewController.PreviousSolButton"]/*[[".buttons[\"<\"]",".buttons[\"PhotosCollectionViewController.PreviousSolButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        photoscollectionviewcontrollerPrevioussolbuttonButton.tap()
+        photoscollectionviewcontrollerPrevioussolbuttonButton.tap()
+        photoscollectionviewcontrollerPrevioussolbuttonButton.tap()
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
